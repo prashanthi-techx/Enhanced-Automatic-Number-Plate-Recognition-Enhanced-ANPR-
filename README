@@ -1,0 +1,92 @@
+# Enhanced Automatic Number Plate Recognition (ANPR) 
+
+A real-time ANPR system built with Python, OpenCV, dlib, and pytesseract.  
+Detects vehicles, reads license plates, and estimates vehicle speed.  
+
+Patent Published: **Patent No: 202441025024 (IPO Journal 14/2024)**
+
+---
+
+## Features 
+
+- Real-time vehicle detection and tracking  
+- Automatic number plate recognition (OCR)  
+- Speed estimation in km/h  
+- Snapshots of vehicles exceeding speed limits saved automatically  
+- Works with both video files and webcam  
+
+---
+
+## Technology Stack 
+
+- **Python 3.10+**  
+- **OpenCV** – Image & video processing  
+- **dlib** – Correlation tracker for vehicle tracking  
+- **pytesseract** – OCR for reading number plates  
+- **NumPy** – Numerical operations  
+- **Haar Cascades** – Pre-trained models for vehicle & plate detection  
+
+---
+
+## Folder Structure 
+Enhanced-ANPR/
+-src/
+    main.py
+    detect_plate.py
+    ocr_recognition.py
+    speed_estimation.py
+    utils.py
+models/
+    haarcascade_russian_plate_number.xml
+outputs/ # Saved snapshots of detected vehicles
+test_videos/ # Optional demo videos
+requirements.txt
+README.md
+
+
+---
+
+
+---
+
+## Installation
+
+1. Clone the repository:  
+```bash
+git clone https://github.com/yourusername/Enhanced-ANPR.git
+cd Enhanced-ANPR
+
+
+2.Create and activate a virtual environment:
+
+  python -m venv venv
+  .\venv\Scripts\Activate.ps1
+
+3.Install dependencies:
+  pip install -r requirements.txt
+
+
+How to Run 
+Using a Video File
+
+Place your video in test_videos/
+
+In src/main.py, set:
+
+VIDEO_SOURCE = "test_videos/car_video.mp4"
+
+
+Run:
+
+python src/main.py
+
+Using a Webcam
+
+In src/main.py, set:
+
+VIDEO_SOURCE = 0
+
+
+Run:
+
+python src/main.py

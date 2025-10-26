@@ -1,0 +1,7 @@
+opencv-python==4.8.0
+numpy
+pytesseract
+dlib
+imutils
+matplotlib
+pillow
