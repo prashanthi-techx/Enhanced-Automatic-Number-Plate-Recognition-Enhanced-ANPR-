@@ -1,13 +1,12 @@
-# Enhanced Automatic Number Plate Recognition (ANPR) 
+Enhanced Automatic Number Plate Recognition (ANPR) 
 
 A real-time ANPR system built with Python, OpenCV, dlib, and pytesseract.  
 Detects vehicles, reads license plates, and estimates vehicle speed.  
 
 Patent Published: **Patent No: 202441025024 (IPO Journal 14/2024)**
 
----
 
-## Features 
+Features 
 
 - Real-time vehicle detection and tracking  
 - Automatic number plate recognition (OCR)  
@@ -15,9 +14,8 @@ Patent Published: **Patent No: 202441025024 (IPO Journal 14/2024)**
 - Snapshots of vehicles exceeding speed limits saved automatically  
 - Works with both video files and webcam  
 
----
 
-## Technology Stack 
+Technology Stack 
 
 - **Python 3.10+**  
 - **OpenCV** – Image & video processing  
@@ -26,9 +24,7 @@ Patent Published: **Patent No: 202441025024 (IPO Journal 14/2024)**
 - **NumPy** – Numerical operations  
 - **Haar Cascades** – Pre-trained models for vehicle & plate detection  
 
----
-
-## Folder Structure 
+Folder Structure 
 Enhanced-ANPR/
 -src/
     main.py
@@ -44,12 +40,7 @@ requirements.txt
 README.md
 
 
----
-
-
----
-
-## Installation
+Installation
 
 1. Clone the repository:  
 ```bash
@@ -88,5 +79,6 @@ VIDEO_SOURCE = 0
 
 
 Run:
+
 
 python src/main.py
